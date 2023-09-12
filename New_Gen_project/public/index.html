@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teachable Machine Image Model</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="aside">
+      <h2>X-Diagnose Pulmo AI</h2>
+      <p>เป็นเครื่องมือในการช่วยหาแนวโน้มของ โรคที่เกิดขึ้นบริเวณปอดจากการภาพ X-ray มาเทียบวิเคราะห์โดยการใช้ AI เผื่อลดระยะเวลาที่ใช้ในทางการแพทย์</p>
+    </div>
+    <div class="content">
+      <button type="button" id="start-button" onclick="startPredictions()">Start</button>
+      <div id="image-upload-container" style="display: none;">
+        <input type="file" accept="image/*" id="image-input" onchange="handleImageUpload(event)">
+      </div>
+    </div>
+  </div>
+  <div id="label-container"style="display: none;">
+    <div id="prediction-0" class="prediction-bar"></div>
+    <div id="prediction-1" class="prediction-bar"></div>
+    <div id="prediction-2" class="prediction-bar"></div>
+    <div id="prediction-3" class="prediction-bar"></div>
+    <div id="prediction-4" class="prediction-bar"></div>
+    <div id="prediction-5" class="prediction-bar"></div>
+    <div id="prediction-6" class="prediction-bar"></div>
+    <div id="prediction-7" class="prediction-bar"></div>
+    <div id="prediction-8" class="prediction-bar"></div>
+    <div id="prediction-9" class="prediction-bar"></div>
+    <div id="prediction-10" class="prediction-bar"></div>
+    <div id="prediction-11" class="prediction-bar"></div>
+    <div id="prediction-12" class="prediction-bar"></div>
+    <div id="prediction-13" class="prediction-bar"></div>
+    <div id="prediction-14" class="prediction-bar"></div>
+    <div id="prediction-15" class="prediction-bar"></div>
+    <div id="prediction-16" class="prediction-bar"></div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="app.js" ></script>
+  
+</body>
+</html>

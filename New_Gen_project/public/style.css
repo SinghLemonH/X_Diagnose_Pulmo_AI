@@ -1,0 +1,105 @@
+body {
+    background-color: #3498db;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#image-upload-container {
+    margin-top: 20px;
+}
+#label-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+input {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.aside {
+    margin-right: 300px;
+}
+
+.aside h2{
+    text-align: start;
+    width: 474px;
+    height: 58px;
+    color: var(--gray-gray-900, #1A202C);
+    /* Headings/Headings-h2 */
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.aside p {
+    text-align: start;
+    width: 535px;
+    height: 181px;
+    color: var(--gray-gray-600, #718096);
+    /* Paragraphs/default-lg */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 200% */
+}
+
+.content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    height: 80px;
+    border-radius: 80px;
+    transition: all 0.25s ease;
+}
+
+.content button:hover {
+    transform: translate(-12px,-12px);
+    background-color: #1A202C;
+    box-shadow: #1A202C 4px 3px 10px;
+}
+
+.prediction-bar {
+    border-radius: 20px;
+    padding: 10px;
+    height: 50px; /* สูงของกราฟแท่ง */
+    background-color: #75fab7; /* สีพื้นหลังของกราฟแท่ง */
+    margin: 50px ; /* ระยะห่างระหว่างกราฟแท่ง */
+    /* คุณสามารถปรับแต่งคุณสมบัติอื่น ๆ ตามที่คุณต้องการ */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: width 0.5s ease;
+}
+
+.prediction-bar-highest {
+    background-color: #ff4867; /* Change this to the color you prefer */
+    color: #fff;
+    transition: width 0.8s ease;
+}
